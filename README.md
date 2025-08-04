@@ -52,7 +52,7 @@ Court_dashboard/
 1. Clone the Project
 
 ```bash
-git clone https://github.com/yourusername/Court_dashboard.git
+git clone https://github.com/gollapudirakshitha/court-dashboard
 cd Court_dashboard
 
 2. Create & Activate Virtual Environment

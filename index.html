@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Court Case Metadata Fetcher</title>
+</head>
+<body>
+    <h1>Case Metadata Lookup</h1>
+    <form method="post">
+        <label>Case Type:</label>
+        <input type="text" name="case_type" required><br><br>
+        <label>Case Number:</label>
+        <input type="text" name="case_number" required><br><br>
+        <label>Filing Year:</label>
+        <input type="text" name="filing_year" required><br><br>
+        <input type="submit" value="Fetch Case Details">
+    </form>
+
+    {% if result %}
+        <h2>Fetched Result:</h2>
+        <ul>
+            {% for key, value in result.items() %}
+                <li><strong>{{ key }}:</strong> {{ value }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
